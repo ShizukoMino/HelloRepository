@@ -16,7 +16,6 @@ public class HelloController {
 	public ModelAndView indexMav(ModelAndView mav) {
 		mav.setViewName("index");
 		mav.addObject("msg", "Hello World");
-		System.out.println("ModelAndViewを使用する");
 		return  mav;
 	}
 	
