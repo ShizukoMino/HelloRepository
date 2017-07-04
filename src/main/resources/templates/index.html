@@ -1,14 +1,19 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>top page</title>
+    <title>first page</title>
     <meta  http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
-    <p th:text="${msg}" >ModelAndView</p>
-	<p th:text="${msg2}" >Model</p>
-	<p th:text="${moji}" >ModelAndView</p>
-	<p th:text="${moji2}" >Model</p>
-<!-- <p th:text="${now}" >Model</p> -->
+
+<!-- 20170704 -->
+<p th:text="${msg}" >Hello</p>
+
+<form action="/result" method="post">
+
+	<input type="text" name="text" th:value="*{data}"/>
+	<button type="submit" value="GO">GO</button>
+</form>
+
 </body>
 </html>

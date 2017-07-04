@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>second page</title>
+    <meta  http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<style>
+    p.up { text-transform:uppercase; text-align:center; }
+    p.center { text-align:center; }
+</style>
+</head>
+<body>
+
+<!-- 20170704 -->
+
+<!-- テンプレート側で大文字にする-->
+<p class="up" th:text="${result}" >Display</p>
+
+<!-- コントローラー側で大文字にする -->
+<p class="center" th:text="${result2}" >Display</p>
+
+</body>
+</html>
